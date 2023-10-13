@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Producto</label>
+        <select id="producto" >
+            <option value="">Seleciona el Producto</option>
+            <option value="1111">Aceite</option>
+            <option value="2222">Agua</option>
+            <option value="3333">Azúcar</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Precio</label><br>
+        <input type="text" id="precio" min="0"  oninput="calcularSubtotal()">
+        <br>
+        <label for="">Cantidad</label><br>
+        <input type="text" id="cantidad" min="0" onkeypress="calcularSubtotal()" onkeyup="calcularSubtotal()" onkeydown="calcularSubtotal()">
+        <br>
+        <label for="">SubTotal</label><br>
+        <input type="text" id="subtotal" min="0" readonly>
+        <br>
+        <button id="calcular">Calcular</button>
+        <button id="btnlimpiar">Limpiar</button>
+    </form>
+    <script src="js/funciones.js"></script>
+</body>
+</html>
